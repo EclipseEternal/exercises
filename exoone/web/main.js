@@ -44,7 +44,7 @@ var ddlCSV = function(){
     "ws.php",
     {
       'coords':fdata,
-      'a':'file'
+      'a':'csv'
     },
     function(data){
          var blob=new Blob([data]);
