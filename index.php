@@ -9,8 +9,8 @@
 		<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	</head>
 	<body>
-		<a href=“exoone/index.php”>Exercise 1</a>
-		<a href=“exotwo/index.php”>Exercise 2</a>
+		<a href="exoone/index.php">Exercise 1</a>
+		<a href="exotwo/index.php">Exercise 2</a>
 
 
 	</body>	
