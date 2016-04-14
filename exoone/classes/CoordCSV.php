@@ -6,11 +6,14 @@ class CoordCSV implements CoordIF{
 	
 	protected $coord_list = array();
 	
+  public function __construct($coo){
+    $this->setCoordinates($coo);
+  }
 	public function setCoordinates($coord_list){
 		$this->coord_list = $coord_list;
 	}
 	public function renderFormat(){
-		$st = “”;
+		$st = "";
 		foreach($this->coord_list as $coords){
 			$first = true;
 			foreach($coords as $coo){
@@ -19,10 +22,10 @@ class CoordCSV implements CoordIF{
 					$first = false;
 				}
 				else
-					$st .= “;$coo”;
+					$st .= ",$coo";
 			}
-			$st .= “\n”;
+			$st .= "\n";
 		}
 		return $st;
-	)
+  }
 }
